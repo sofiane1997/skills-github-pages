@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Sofiane Boudaoud | Physicien Nucléaire & Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .sidebar {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            align-self: start;
+        }
+        
+        .main-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+            display: inline-block;
+        }
+        
+        h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-item {
+            margin-bottom: 2rem;
+        }
+        
+        .date {
+            color: var(--gray);
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        ul {
+            padding-left: 1.2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .skill {
+            background: var(--light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .language {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .language-name {
+            font-weight: bold;
+        }
+        
+        .language-level {
+            color: var(--gray);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            background: var(--primary);
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animated {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content animated">
+            <!-- Remplacez par votre photo -->
+            <img src="https://via.placeholder.com/150" alt="Photo de Sofiane Boudaoud" class="profile-img">
+            <h1>Sofiane Boudaoud</h1>
+            <p class="tagline">Physicien Nucléaire | Data Analyst | Entrepreneur</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Alger, Algérie</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>sofiane.boudaoud@email.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+213 XXX XXX XXX</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <aside class="sidebar animated delay-1">
+                <section class="section-item">
+                    <h2>Compétences</h2>
+                    <h3>Techniques</h3>
+                    <div class="skills">
+                        <span class="skill">Spectrométrie gamma/alpha</span>
+                        <span class="skill">DRX</span>
+                        <span class="skill">Mössbauer</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Matlab</span>
+                        <span class="skill">Origin</span>
+                        <span class="skill">X'Pert HighScore</span>
+                        <span class="skill">Recoil</span>
+                    </div>
+                    
+                    <h3>Transverses</h3>
+                    <div class="skills">
+                        <span class="skill">Analyse de données</span>
+                        <span class="skill">Gestion de projet</span>
+                        <span class="skill">Marketing digital</span>
+                        <span class="skill">Maintenance PC</span>
+                    </div>
+                </section>
+                
+                <section class="section-item">
+                    <h2>Langues</h2>
+                    <div class="language">
+                        <span class="language-name">Français</span>
+                        <span class="language-level">Courant (C1/C2)</span>
+                    </div>
+                    <div class="language">
+                        <span class="language-name">Arabe</span>
+                        <span class="language-level">Courant (C1)</span>
+                    </div>
+                    <div class="language">
+                        <span class="language-name">Anglais</span>
+                        <span class="language-level">Technique (B1)</span>
+                    </div>
+                    <div class="language">
+                        <span class="language-name">Kabyle</span>
+                        <span class="language-level">Maternelle</span>
+                    </div>
+                </section>
+                
+                <section class="section-item">
+                    <h2>Centres d'intérêt</h2>
+                    <ul>
+                        <li>Recherche scientifique</li>
+                        <li>Technologie & Innovation</li>
+                        <li>Entrepreneuriat</li>
+                        <li>Voyages</li>
+                    </ul>
+                </section>
+            </aside>
+            
+            <main class="main-section animated delay-2">
+                <section class="section-item">
+                    <h2>Expérience Professionnelle</h2>
+                    
+                    <div class="section-item">
+                        <h3>Auto-entrepreneur (E-commerce)</h3>
+                        <span class="date">Depuis 2024</span>
+                        <ul>
+                            <li>Gestion complète de marketplace en ligne</li>
+                            <li>Stratégies de marketing digital et publicité</li>
+                            <li>Gestion des stocks et logistique</li>
+                            <li>Chiffre d'affaires mensuel : +500 000 DZD</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-item">
+                        <h3>Stagiaire Recherche</h3>
+                        <span class="date">2023 - Centre de Recherche Nucléaire d'Alger</span>
+                        <ul>
+                            <li>Caractérisation de nanomatériaux par DRX et spectroscopie Mössbauer</li>
+                            <li>Optimisation des paramètres expérimentaux (gain de 20% en précision)</li>
+                            <li>Analyse et interprétation des données scientifiques</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-item">
+                        <h3>Assistant Laboratoire</h3>
+                        <span class="date">2022 - Centre de Recherche Nucléaire de Birine</span>
+                        <ul>
+                            <li>Calibration de détecteurs gamma (NaI, HPGe)</li>
+                            <li>Analyse de données avec Python et Origin</li>
+                            <li>Participation à des travaux pratiques de détection nucléaire</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="section-item">
+                    <h2>Formation</h2>
+                    
+                    <div class="section-item">
+                        <h3>Master en Physique des Rayonnements</h3>
+                        <span class="date">2021-2023 - USTHB, Alger</span>
+                        <ul>
+                            <li>Spécialisation : Spectrométrie gamma/alpha, modélisation Matlab</li>
+                            <li>Projet de fin d'étude : "Détection des rayonnements par capteur CdZnTe" (Note : 16/20)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-item">
+                        <h3>Licence en Physique Fondamentale</h3>
+                        <span class="date">2018-2021 - USTHB, Alger</span>
+                    </div>
+                </section>
+                
+                <section class="section-item">
+                    <h2>Projets</h2>
+                    <div class="section-item">
+                        <h3>Développement d'un algorithme d'analyse de spectres</h3>
+                        <ul>
+                            <li>Création d'un script Python pour l'analyse automatique de spectres gamma</li>
+                            <li>Réduction du temps d'analyse de 30%</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+    <footer class="animated delay-3">
+        <p>© 2023 Sofiane Boudaoud - Tous droits réservés</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
